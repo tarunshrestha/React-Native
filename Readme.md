@@ -35,5 +35,6 @@
 - npm install nativewind
 - npm install --save-der tailwindcss@latest
 - npx tailwindcss init 
-- In tailwind.config.js change content: ["./app/**/*.{js,jsx,ts,tsx}", "./screens/**/*.{js,jsx,ts,tsx}"],
+- In tailwind.config.js change content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
 - In babel.config.js paste => plugins: ["nativewind/babel"]  Below presets.
+- Note: If it doesnot work just wait and pray for god then after a moment it will work idk how but it will work.
