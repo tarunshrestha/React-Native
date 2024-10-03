@@ -10,3 +10,30 @@
 
 # Run app
 - npx expo start
+
+# Changes 
+- from file package.json change main to =>  "main": "expo-router/entry",
+- in app.json just below name paste => "scheme": "<project name>",
+
+# For file base
+- Create fole app in project
+- Create file index.jsx in app
+- Copy all from App.js and delete it
+- Paste it in _layout file
+
+# Device connection without SDK's
+- Install expo go from playstore 
+- scan QR provided to us while starting the app 
+- Shake for config after connection
+- Note: should be in same network, No VPN
+
+# Shortcuts
+- rnfes = to create basic template
+
+# Styling (TailWindCSS == NativeWind)
+- npm install tailwindcss postcss autoprefixer
+- npm install nativewind
+- npm install --save-der tailwindcss@latest
+- npx tailwindcss init 
+- In tailwind.config.js change content: ["./app/**/*.{js,jsx,ts,tsx}", "./screens/**/*.{js,jsx,ts,tsx}"],
+- In babel.config.js paste => plugins: ["nativewind/babel"]  Below presets.
