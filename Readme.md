@@ -19,7 +19,7 @@
 - Create fole app in project
 - Create file index.jsx in app
 - Copy all from App.js and delete it
-- Paste it in _layout file
+- Paste it in index.jsx file
 
 # Device connection without SDK's
 - Install expo go from playstore 
@@ -31,8 +31,7 @@
 - rnfes = to create basic template
 
 # Styling (TailWindCSS == NativeWind)
-- npm install tailwindcss postcss autoprefixer
-- npm install nativewind
+- npm install tailwindcss postcss autoprefixer nativewind
 - npm install --save-der tailwindcss@latest
 - npx tailwindcss init 
 - In tailwind.config.js change content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
