@@ -27,12 +27,16 @@
 - Shake for config after connection
 - Note: should be in same network, No VPN
 
+# For Web
+- npx expo install react-dom react-native-web @expo/metro-runtime
+
 # Shortcuts
 - rnfes = to create basic template
 
 # Styling (TailWindCSS == NativeWind)
 - npm install tailwindcss postcss autoprefixer nativewind
 - npm install --save-der tailwindcss@latest
+- npm install --save-dev metro-react-native-babel-preset
 - npx tailwindcss init 
 - In tailwind.config.js change content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
 - In babel.config.js paste => plugins: ["nativewind/babel"]  Below presets.

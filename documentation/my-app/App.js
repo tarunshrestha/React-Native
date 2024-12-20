@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, Text, Image, ScrollView, TextInput } from 'react-native';
+import Cat from './components/Cat';
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView className="bg-white">
+      <View className="p-4">
+        <Text className="text-center text-2xl font-bold text-black">Yo Tailwind cha React Native ma!</Text>
+        <Image
+          source={{ uri: 'https://reactnative.dev/docs/assets/p_cat2.png' }}
+          className="w-48 h-48 mx-auto"
+        />
+      </View>
+      <TextInput
+        className="border p-2 my-4"
+        placeholder="Enter anything..."
+      />
+      <Cat />
+    </ScrollView>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
